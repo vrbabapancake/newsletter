@@ -1,6 +1,6 @@
-# Monthly Newsletter
+# 🏡 The Family Newsletter
 
-A Jekyll-based static site for publishing monthly newsletter issues.
+A Jekyll-based static site for the monthly family newsletter.
 
 ## Setup
 
