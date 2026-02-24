@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="newsletter">
+  <header class="newsletter-header">
+    <p class="newsletter-issue">Issue #{{ page.issue }}</p>
+    <h1 class="newsletter-title">{{ page.title }}</h1>
+    <p class="newsletter-date">{{ page.date | date: "%B %Y" }}</p>
+    {% if page.description %}
+    <p class="newsletter-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="newsletter-body">
+    {{ content }}
+  </div>
+
+  <footer class="newsletter-footer">
+    <a href="{{ '/' | relative_url }}">&larr; Back to all issues</a>
+  </footer>
+</article>

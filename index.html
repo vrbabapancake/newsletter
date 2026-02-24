@@ -1,0 +1,24 @@
+---
+layout: default
+title: All Issues
+---
+<h1 class="page-title">All Issues</h1>
+
+{% assign newsletters = site.newsletters | sort: "date" | reverse %}
+
+{% if newsletters.size == 0 %}
+  <p>No issues published yet. Check back soon!</p>
+{% else %}
+  <ul class="newsletter-list">
+    {% for newsletter in newsletters %}
+    <li class="newsletter-list-item">
+      <p class="issue-number">Issue #{{ newsletter.issue }}</p>
+      <h2><a href="{{ newsletter.url | relative_url }}">{{ newsletter.title }}</a></h2>
+      <p class="date">{{ newsletter.date | date: "%B %Y" }}</p>
+      {% if newsletter.description %}
+      <p class="description">{{ newsletter.description }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}

@@ -1,0 +1,166 @@
+/* Reset & base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+  background: #fafaf8;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a { color: #1a6a9a; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  border-bottom: 3px solid #222;
+  padding: 2rem 0 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+.site-description {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
+/* Index page */
+.page-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.newsletter-list {
+  list-style: none;
+}
+
+.newsletter-list-item {
+  border-bottom: 1px solid #ddd;
+  padding: 1.25rem 0;
+}
+
+.newsletter-list-item:last-child { border-bottom: none; }
+
+.newsletter-list-item .issue-number {
+  font-size: 0.85rem;
+  color: #888;
+  font-family: monospace;
+  margin-bottom: 0.25rem;
+}
+
+.newsletter-list-item h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.newsletter-list-item .date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-list-item .description {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Newsletter article */
+.newsletter-header {
+  border-bottom: 2px solid #222;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.newsletter-issue {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  font-family: monospace;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-date {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.newsletter-description {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Newsletter body typography */
+.newsletter-body h2 {
+  font-size: 1.4rem;
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.newsletter-body h3 {
+  font-size: 1.15rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.newsletter-body p { margin-bottom: 1.25rem; }
+
+.newsletter-body ul,
+.newsletter-body ol {
+  margin: 0 0 1.25rem 1.5rem;
+}
+
+.newsletter-body li { margin-bottom: 0.4rem; }
+
+.newsletter-body blockquote {
+  border-left: 4px solid #ccc;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+.newsletter-body hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* Footer */
+.newsletter-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.site-footer {
+  border-top: 1px solid #ddd;
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  color: #888;
+  font-size: 0.9rem;
+}

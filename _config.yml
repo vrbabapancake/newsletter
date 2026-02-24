@@ -1,0 +1,26 @@
+title: Monthly Newsletter
+description: A monthly digest of news, updates, and insights.
+baseurl: ""
+url: ""
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /newsletters/:year/:month/:title/
+
+# Collections
+collections:
+  newsletters:
+    output: true
+    permalink: /newsletters/:year/:month/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: newsletters
+    values:
+      layout: newsletter
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
