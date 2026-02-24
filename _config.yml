@@ -1,7 +1,7 @@
 title: "🏡 The Family Newsletter"
 description: A monthly digest of family life, updates, and happenings.
-baseurl: ""
-url: ""
+baseurl: "/newsletter"
+url: "https://vrbabapancake.github.io"
 
 # Build
 markdown: kramdown
